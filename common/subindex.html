@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>형제창</title>
+    <style>
+        header h1{
+            text-align: center;
+        }
+        header a:nth-child(2){
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+        }
+        header a:nth-child(2) button{
+            border: none;
+            background: transparent;
+            font-size: 18px;
+        }
+        header a:nth-child(2) button:hover{
+            text-decoration: underline;
+        }
+        header a:nth-child(3){
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        header a:nth-child(3) button{
+            width: 150px;
+            height: 60px;
+            border-radius: 25px;
+            border: none;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+        header a:nth-child(3) button:hover{
+            background: gray;
+            color: #fff;
+        }    
+    </style>
+</head>
+<body></body>
+    <header>
+        <h1>이곳은 형제창입니다.</h1>
+        <a href="#" onclick="closeBtn()"><button>close</button></a>
+        <a href="./mainIndex.html"><button>자식창 바로가기</button></a>
+    </header>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
